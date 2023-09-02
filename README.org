@@ -1,0 +1,19 @@
+#+title: BLIMPY: Type the word 'BLIMPY' in Emacs
+* Installation
+#+begin_src emacs-lisp :lexical t
+(use-package blimpy
+  :elpaca (blimpy :host github :repo "progfolio/blimpy"))
+#+end_src
+
+* Usage
+[[https://assets3.thrillist.com/v1/image/3092197/1584x1056/crop;webp=auto;jpeg_quality=60;progressive.jpg]]
+
+* One size fits all configuration:
+#+begin_src emacs-lisp :lexical t
+(use-package blimpy
+  :elpaca (blimpy :host github :repo "progfolio/blimpy")
+  :after (evil)
+  :config
+  (add-hook 'blimpy-before-typing-the-word-blimpy-in-emacs-hook
+            (apply-partially #'evil-insert 1)))
+#+end_src
