@@ -1,0 +1,10 @@
+name: blimpy
+description: blimpy
+title: "[blimpy]: "
+labels: ["blimpy"]
+body:
+  - type: textarea
+    attributes:
+      label: blimpy
+      value: "blimpy blimpy blimpy."
+
